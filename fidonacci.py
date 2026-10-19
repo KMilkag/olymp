@@ -1,3 +1,5 @@
+from functools import lru_cache
+@lru_cache(maxsize=None)
 def fib(n):
     if n in (0,1):
         return 1
